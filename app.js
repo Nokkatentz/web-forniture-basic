@@ -5,16 +5,16 @@ let PWT3 = document.getElementById('pro3');
 function Pwt_opacity(i){
 
     if (i === 1){
-        PWT2.style.opacity = 0.7;
-        PWT3.style.opacity = 0.7;
+        PWT2.style.opacity = 0.5;
+        PWT3.style.opacity = 0.5;
     }       
     if (i === 2){
-        PWT1.style.opacity = 0.7;
-        PWT3.style.opacity = 0.7;
+        PWT1.style.opacity = 0.5;
+        PWT3.style.opacity = 0.5;
     }       
     else if (i === 3){
-        PWT1.style.opacity = 0.7;
-        PWT2.style.opacity = 0.7;
+        PWT1.style.opacity = 0.5;
+        PWT2.style.opacity = 0.5;
     }       
 }
 
