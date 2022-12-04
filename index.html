@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "app.js"></script>
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet"  href="style2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soudemy </title>
 </head>
 <body>
     <container class="top1">
-        <img src="img/Rectangle 4.png" alt="">
+        <img src="img/Rectangle 4.png" alt="" class="mainbg">
         <section class = "nav">
             <div class = "logo">
                 <p>soudemy</p>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="page/shop.html">Shop</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
+            <div class = "nav-icons">
+                <a href="#"><img src="icons/search-normal.png" alt=""></a>
+                <a href="#"><img src="icons/bag-2.png" alt=""></a>
+                <a href="#"><img src="icons/menu.png" alt=""></a>
+            </div>
         </section>
-        <div class = "nav-icons">
-            <button class="search"><a href="#"><img src="icons/search-normal.png" alt=""></a></button>
-            <button class="bag"><a href="#"><img src="icons/bag-2.png" alt=""></a></button>
-            <button class="menu"><a href="#"><img src="icons/menu.png" alt=""></a></button>
-        </div>
         <container class="sec1">
             <div class ="text1">
                 <h2>ALL FOR YOUR HOME</h2>
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, quaerat asperiores unde dolorum soluta dignissimos, quis laborum quos veritatis, omnis at distinctio amet quo repellendus facilis. Dolorum quidem officiis incidunt?</p>
             </div>
-            <div class="btn_view11">
-                <button class="btn_view1">View more</button>
+            <div class="main_btn">
+                <a href="#" class="btn_view1">View more<img src="icons/arrow-right.png" alt=""></a>
             </div>
         </container>
     </container>
@@ -44,47 +43,45 @@
         <div class="text2">
             <h2>PRODUCTS OF THE WEEK</h2>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ea. Nostrum, minus obcaecati! Unde non amet nam odio id, dolorum tempore nobis earum explicabo recusandae officia ipsam quisquam. Quia, iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur elit. Veniam, ea. Nostrum, minus obcaecati! Unde non amet nam odio id, dolorum tempore nobis earum explicabo recusandae officia ipsam quisquam. Quia, iusto.</p>
         </div>
         <div class="PTW">
-            <div class="PTW1">
-                <button><a href="#"><img src="img/Rectangle 6.png" alt="">
-                    <span> Pot </span>
-                    <br>$223.00</a>
-                </button>
+            <div id="PTW1">
+                <a href="#"><img id="pro1" src="img/Rectangle 6.png" alt="">
+                <span id="pro_name1">Pot</span><br>
+                <span>$223.00</span>
+                </a>
             </div>
-            <div class="PTW2">
-                <button><a href="#"><img src="img/Rectangle 7.png" alt="">
-                    <span> Lamp </span>
-                    <br>$223.00</a>
-                </button>
+            <div id="PTW2">
+                <a href="#"><img id="pro2" src="img/Rectangle 7.png" alt="">
+                    <span id="pro_name2">Lamp</span><br>
+                    <span>$223.00</span>
+                    </a>
             </div>
-            <div class="PTW3">
-                <button><a href="#"><img src="img/Rectangle 5.png" alt="">
-                    <span> Chaire </span>
-                    <br>$223.00</a>
-                </button>
+            <div id="PTW3">
+                <a href="#"><img id="pro3" src="img/Rectangle 5.png" alt="">
+                    <span id="pro_name3">Chaire</span><br>
+                    <span>$223.00</span>
+                    </a>
             </div>
         </div>
     </container>
     <container class="sec3">
-        <div class="show1">
             <div class = "pd1">
-                <img src="img/Rectangle 8.png" alt="show1">
+                <img class="bgpd1" src="img/Rectangle 8.png" alt="show1">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quo aliquid rem animi nesciunt eligendi. Laudantium corporis impedit voluptatibus tenetur </p>
-                <button class="btn_view2">View more</button>
+                <a href="#" class="btn_view2">View more<img src="icons/arrow-right.png" alt=""></a>
             </div>
             <div class="pd2">
                 <img src="img/Rectangle 10.png" alt="show2">
             </div>
-        </div>
     </container>
     <contianer class="sec4">
         <div class="show2">
             <div class="show2L">
                 <h2>STYLISH CHAIRS</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing ipsum dolor  ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing elit.</p>
-                <button class="btn_view3">View more</button>
+                <a href="#" class="btn_view3">View more<img src="icons/arrow-right-b.png" alt=""></a>
             </div>
             <div class="show2R">
                 <img src="img/Rectangle 11.png" alt="chaire">
@@ -99,7 +96,7 @@
             <div class="show3R">
                 <h2>TABLE</h2>
                 <p>Lorem, ipsum dolor sit amet dolor sit dolor sit amet consectetur adipisicing eliamet consectetur adipisicing eliconsectetur adipisicing elit.</p>
-                <button class="btn_view4">View more</button>            
+                <a href="#" class="btn_view4">View more<img src="icons/arrow-right-b.png" alt=""></a>          
             </div>
         </div>
     </container>
@@ -108,7 +105,7 @@
             <div class="show4L">
                 <h2>CONTEMPORARY LAMPS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ipsum ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit Architecto, eligendi.</p>
-                <button class="btn_view5">View more</button>            
+                <a href="#" class="btn_view5">View more<img src="icons/arrow-right-b.png" alt=""></a>         
              </div>
             <div class="show4R">
                 <img src="img/Rectangle 15.png" alt="clock">
@@ -118,9 +115,9 @@
     <container class="sec7">
         <div class="show5">
             <div class="show5T">
-                <img src="img/Rectangle 17.png" alt="">
+                <img class="bgshow5T" src="img/Rectangle 17.png" alt="">
                 <p>order now for an <span>delivery in 24h !</span></p>
-                <button class="btn_view6">View more</button>            
+                <a href="#" class="btn_view6">View more<img src="icons/arrow-right-b.png" alt=""></a>          
              </div>
             <div class="show5D">
                 <div class="show5D_1">
@@ -147,7 +144,7 @@
                 <div class="show5D_4">
                     <div>
                         <img src="icons/dollar-circle.png" alt="dollar">
-                        <h4>PAYMENT</h4>
+                        <h4>Payment</h4>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quis?</p>
                 </div>
@@ -158,18 +155,18 @@
         <div class="show6">
             <div class="show6L">
                 <div class="show6LD">
-                    <img src="img/Rectangle 20.png" alt="">
+                    <img id="rec20" src="img/Rectangle 20.png" alt="">
                     <p>29 sep.2022 / by soroush norozy<br>
                         <span>Your office should have only natural materials</span></p>
-                    <button class = "read1">read more</button>
+                    <a href="#" class="read1">read more</a>
                 </div>
             </div>
             <div class="show6R">
                 <div class="show6RD">
-                    <img src="img/Rectangle 19.png" alt="">
+                    <img id="rec19" src="img/Rectangle 19.png" alt="">
                     <p>29 sep.2022 / by soroush norozy<br>
                         <span>Your office should have only natural materials</span></p>
-                    <button class = "read2">read more</button>
+                        <a href="#" class="read2">read more</a>
                 </div>
             </div>
         </div>
@@ -185,7 +182,6 @@
     </container>
     <footer>
         <div class="detail">
-            <img class ="detailbg" src="img/Rectangle 22.png" alt="">
             <h3>Soudemy</h3>
             <div class="about_us">
                <p id="detail1">About Us</p>
@@ -221,9 +217,11 @@
                 </p>                
             </div>
             <div class="sign">
+                <p>DESIGN BY Figma community</p>
                 <p>CODING BY Pratchaya Posom</p>
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src = "/app.js"></script>
 </body> 
 </html>
