@@ -3,6 +3,9 @@ let Ele_animation = document.querySelectorAll('.for_animation');
 
 let observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry) => {
+        let scrollPos = window.scrollY - 20;
+        console.log('scrollPos ='+scrollPos);
+        console.log('navPos = '+navPos);
         if(entry.isIntersecting){
             entry.target.classList.add('show');
         }

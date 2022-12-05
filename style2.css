@@ -833,7 +833,7 @@
 
 .for_animation{
     opacity: 0;
-    transition: 1s;
+    transition: all 1s;
     transform: translateY(50%);
 }
 .show{
@@ -920,10 +920,10 @@
     #nav ul {
         grid-template-columns: 20% 20% 24% 20%;
     }
-    #nav ul li a {
+    #menu a {
         font-size: 1.2rem;
     }
-        #nav ul li a:hover {
+        #menu a:hover {
             padding-left: 0.5rem;
             font-size: 1.3rem;
         }
@@ -993,12 +993,12 @@
     #nav ul {
         grid-template-columns: 20% 20% 24% 20%;
     }
-    #nav ul li a {
-        font-size: 0.8rem;
+    #menu a {
+        font-size: 13px;
     }
-        #nav ul li a:hover {
-            padding-left: 0.5rem;
-            font-size: 1rem;
+        #menu a:hover {
+            padding-left: 5px;
+            font-size: 14px;
         }
 
 /* ---------------sec1----------------- */
@@ -1170,5 +1170,9 @@
         #useful ul li a:hover {
             font-size: 1rem;
         }
-
+    .for_animation{
+        transform: translateY(98%);
+    }.show{
+        transform: translateY(0);
+    }
 }
