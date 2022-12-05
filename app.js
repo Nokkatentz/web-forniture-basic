@@ -1,3 +1,20 @@
+
+let Ele_animation = document.querySelectorAll('.for_animation');
+
+let observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+
+});
+
+Ele_animation.forEach((el) => observer.observe(el));
+
+//=====================================================
+
+
 let nav = document.getElementById('nav');
 let navPos = nav.getBoundingClientRect().top;
 
@@ -14,6 +31,7 @@ window.addEventListener('scroll' ,() =>{
 
 
 //======================================================
+
 
 let PWT1 = document.getElementById('pro1');
 let PWT2 = document.getElementById('pro2');
