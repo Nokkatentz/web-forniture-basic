@@ -7,74 +7,83 @@
 
 /* -----------------navbar------------------------ */
 
-.top1 {
+#top1 {
     width: 100%;
 }
-.mainbg {
+#mainbg {
     position: relative;
     width: 100%;
     height: auto;
 }
-.nav {
+#nav {
     position: absolute;
     top: 0;
-    left: 2rem;
     margin: 3%;
     display: grid;
     grid-template-columns: 13% 60% 20%;
     align-items: center;
-    width: 90%;
+    width: 96%;
     justify-content: space-between;
+    transition: 0.5s;
 
 }
-.logo {
+#logo {
     color: aliceblue;
     font-size: 2.4rem;
     padding: 1rem;
 }
-.nav ul {
+#menu {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 10% 10% 15% 10%;
     align-items: center;
     justify-content: space-evenly;
     margin-right: 20%;
     list-style: none;
 }
-.nav ul li a {
+#menu li a {
     color: aliceblue;
     padding: 0.2rem;
     font-size: 1.2rem;
     text-decoration: none;
     transition: 0.5s;
 }
-    .nav ul li a:hover {
+    #menu li a:hover {
         color: black;
         padding-left: 0.5rem;
         font-size: 1.22rem;
     }
-.nav-icons {
+#nav-icons {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     align-items: center;
     height: 50%;
 }
-.nav-icons a {
+#nav-icons a {
     max-width: 100%;
     height: auto;
     transition: 0.5s;
 }
-    .nav-icons a:hover {
+    #nav-icons a:hover {
         padding-bottom: 100%;
     }
-.nav-icons img {
+#nav-icons img {
     max-width: 100%;
     height: auto;
 }
 
+#nav.sticky {
+    position: fixed;
+    background-color: #8A8A8A;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+  }
+  
+
 /* ---------------------main-------------------- */
 
-.sec1 {
+#sec1 {
     position: absolute;
     top: 13rem;
     left: 2rem;
@@ -85,7 +94,7 @@
     margin: 3%;
     width: 90%;
 }
-.text1 {
+#text1 {
     color: aliceblue;
     font-size: 2.4rem;
     padding: 1rem;
@@ -95,22 +104,22 @@
     flex-direction: column;
     padding-bottom: 1rem;
 }
-.text1 h2 {
+#text1 h2 {
     text-align: center;
 }
-.text1 p {
+#text1 p {
     color: aliceblue;
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
     max-width: 70%;
 }
-.main_btn {
+#main_btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main_btn a {
+#main_btn a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,45 +131,45 @@
     transition: 0.5s;
     border: 2px solid aliceblue;
 }
-    .main_btn a:hover {
+    #main_btn a:hover {
         margin-left: 1rem;
         padding-left: 1rem;
         border: 2px solid rgb(0, 0, 0);
     }
-.main_btn img {
+#main_btn img {
     padding-left: 1rem;
 }
 
 /* ----------------------sec2-------------------------- */
 
-.sec2 {
+#sec2 {
     display: grid;
     grid-template-rows: auto auto;
     margin: 3%;
 }
-.text2 {
+#text2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
-.text2 h2 {
+#text2 h2 {
     font-size: 3rem;
 }
-.text2 p {
+#text2 p {
     max-width: 60%;
     font-size: 1.2rem;
     color: #8A8A8A;
     text-align: center;
 }
-.PTW {
+#PTW {
     display: grid;
     grid-template-columns: auto auto auto;
     max-width: 100%;
     margin-top: 2rem;
 }
-.PTW span {
+#PTW span {
     font-size: 1.2rem;
     color: #8A8A8A;
 }
@@ -230,20 +239,20 @@
 
 /* -------------------sec3----------------------------- */
 
-.sec3 {
+#sec3 {
     display: grid;
     grid-template-rows: auto auto;
 }
-.pd1 {
+#pd1 {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.bgpd1 {
+#bgpd1 {
     width: 100%;
     height: 100%;
 }
-.pd1 p {
+#pd1 p {
     position: absolute;
     top: 40%;
     left: 73%;
@@ -252,7 +261,7 @@
     text-align: center;
     color: aliceblue;
 }
-.btn_view2 {
+#btn_view2 {
     position: absolute;
     top: 73%;
     left: 73%;
@@ -268,47 +277,47 @@
     transition: 0.5s;
     border: 2px solid aliceblue;
 }
-    .btn_view2:hover {
+    #btn_view2:hover {
         margin-left: 1rem;
         padding-left: 1rem;
         border: 2px solid rgb(0, 0, 0);
     }
-.btn_view2 img {
+#btn_view2 img {
     padding-left: 1rem;
 }
-.pd2 img {
+#pd2 img {
     width: 100%;
     height: auto;
 }
 
 /* ----------------sec4----------------------- */
 
-.sec4 {
+#sec4 {
     display: flex;
     margin: 3%;
 }
-.show2 {
+#show2 {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.show2L {
+#show2L {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.show2L h2 {
+#show2L h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.show2L p {
+#show2L p {
     font-size: 1.2rem;
     text-align: center;
     color: #8A8A8A;
     width: 70%;
     margin-bottom: 3rem;
 }
-.btn_view3 {
+#btn_view3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,62 +329,62 @@
     transition: 0.5s;
     border: 2px solid black;
 }
-    .btn_view3:hover {
+    #btn_view3:hover {
         background-color: #8A8A8A;
         color: aliceblue;
         margin-left: 1rem;
         padding-left: 1rem;
     }
-.btn_view3 img {
+#btn_view3 img {
     padding-left: 1rem;
 }
-.show2R {
+#show2R {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show2R img {
+#show2R img {
     width: 80%;
     height: auto;
 }
 
 /* ----------------------sec5-------------------- */
 
-.sec5 {
+#sec5 {
     display: flex;
     margin: 3%;
 }
-.show3 {
+#show3 {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.show3L {
+#show3L {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show3L img {
+#show3L img {
     width: 80%;
     height: auto;
 }
-.show3R {
+#show3R {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.show3R h2 {
+#show3R h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.show3R p {
+#show3R p {
     font-size: 1.2rem;
     text-align: center;
     width: 70%;
     color: #8A8A8A;
     margin-bottom: 2rem;
 }
-.btn_view4 {
+#btn_view4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,44 +396,44 @@
     transition: 0.5s;
     border: 2px solid black;
 }
-    .btn_view4:hover {
+    #btn_view4:hover {
         background-color: #8A8A8A;
         color: aliceblue;
         margin-left: 1rem;
         padding-left: 1rem;
     }
-.btn_view4 img {
+#btn_view4 img {
     padding-left: 1rem;
 }
 
 /* ------------------sec6--------------------- */
 
-.sec6 {
+#sec6 {
     display: flex;
     margin: 3%;
 }
-.show4 {
+#show4 {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.show4L {
+#show4L {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.show4L h2 {
+#show4L h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
 }
-.show4L p {
+#show4L p {
     text-align: center;
     font-size: 1.2rem;
     width: 90%;
     color: #8A8A8A;
     margin-bottom: 2rem;
 }
-.btn_view5 {
+#btn_view5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -436,44 +445,44 @@
     transition: 0.5s;
     border: 2px solid black;
 }
-    .btn_view5:hover {
+    #btn_view5:hover {
         background-color: #8A8A8A;
         color: aliceblue;
         margin-left: 1rem;
         padding-left: 1rem;
     }
-.btn_view5 img {
+#btn_view5 img {
     padding-left: 1rem;
 }
-.show4R {
+#show4R {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show4R img {
+#show4R img {
     width: 80%;
     height: auto;
 }
 
 /* ----------------sec7--------------------- */
 
-.show5T {
+#show5T {
     position: relative;
 }
-.bgshow5T {
+#bgshow5T {
     width: 100%;
     height: auto;
 }
-.show5T p {
+#show5T p {
     position: absolute;
     top: 39%;
     left: 20%;
     font-size: 2.5rem;
 }
-.show5T span {
+#show5T span {
     font-weight: bold;
 }
-.btn_view6 {
+#btn_view6 {
     position: absolute;
     top: 33%;
     left: 60%;
@@ -488,106 +497,106 @@
     transition: 0.5s;
     border: 2px solid black;
 }
-    .btn_view6:hover {
+    #btn_view6:hover {
         background-color: #8A8A8A;
         color: aliceblue;
         margin-left: 1rem;
         padding-left: 1rem;
     }
-.btn_view6 img {
+#btn_view6 img {
     padding-left: 1rem;
 }
 
 
-.show5D {
+#show5D {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 3% 0% 3% 5%;
 }
-.show5D_1 {
+#show5D_1 {
     display: grid;
     grid-template-rows: auto auto;
 }
 /* ----------------------------------- */
-.show5D_1 div {
+#show5D_1 div {
     display: grid;
     grid-template-columns: 25% auto;
     align-items: center;
     width: 80%;
     margin-bottom: 0.5rem;
 }
-.show5D_1 img {
+#show5D_1 img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show5D_1 h4 {
+#show5D_1 h4 {
     font-size: 1.6rem;
 }
-.show5D_1 p {
+#show5D_1 p {
     font-size: 1.2rem;
     color: #8A8A8A;
     width: 80%;
 }
 /* ----------------------------------- */
-.show5D_2 div {
+#show5D_2 div {
     display: grid;
     grid-template-columns: 25% auto;
     align-items: center;
     width: 80%;
     margin-bottom: 0.5rem;
 }
-.show5D_2 img {
+#show5D_2 img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show5D_2 h4 {
+#show5D_2 h4 {
     font-size: 1.6rem;
 }
-.show5D_2 p {
+#show5D_2 p {
     font-size: 1.2rem;
     color: #8A8A8A;
     width: 80%;
 }
 /* -------------------------------------- */
-.show5D_3 div {
+#show5D_3 div {
     display: grid;
     grid-template-columns: 25% auto;
     align-items: center;
     width: 80%;
     margin-bottom: 0.5rem;
 }
-.show5D_3 img {
+#show5D_3 img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show5D_3 h4 {
+#show5D_3 h4 {
     font-size: 1.6rem;
 }
-.show5D_3 p {
+#show5D_3 p {
     font-size: 1.2rem;
     color: #8A8A8A;
     width: 80%;
 }
 /* -------------------------------------- */
-.show5D_4 div {
+#show5D_4 div {
     display: grid;
     grid-template-columns: 25% auto;
     align-items: center;
     width: 80%;
     margin-bottom: 0.5rem;
 }
-.show5D_4 img {
+#show5D_4 img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.show5D_4 h4 {
+#show5D_4 h4 {
     font-size: 1.6rem;
 }
-.show5D_4 p {
+#show5D_4 p {
     font-size: 1.2rem;
     color: #8A8A8A;
     width: 80%;
@@ -595,114 +604,114 @@
 
 /* ----------------------sec8------------------ */
 
-.sec8 {
+#sec8 {
     display: grid;
     grid-template-columns: auto;
     margin: 3%;
 }
-.show6 {
+#show6 {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
 }
-.show6 img {
+#show6 img {
     width: 90%;
     height: auto;
     transition-property: width ,height;
     transition-duration: 1s;
     transition-delay: 0.3s;
 }
-    .show6 img:hover {
+    #show6 img:hover {
         width: 120%;
         height: auto;
         cursor: pointer;
     }
-.show6L {
+#show6L {
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
 }
-.show6LD {
+#show6LD {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.show6LD p {
+#show6LD p {
     text-align: center;
     font-size: 1rem;
     color: #8A8A8A;
     margin-bottom: 0.5rem;
 }
-.show6LD span {
+#show6LD span {
     font-size: 1.2rem;
     color: black;
 }
-.show6R {
+#show6R {
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
 }
-.read1 {
+#read1 {
     font-size: 1rem;
     color: #8A8A8A;
     transition: 0.5s;
 }
-    .read1:hover {
+    #read1:hover {
         color: black;
     }
 /* ----------------------------------------- */
-.show6RD {
+#show6RD {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.show6RD p {
+#show6RD p {
     text-align: center;
     font-size: 1rem;
     color: #8A8A8A;
     margin-bottom: 0.5rem;
 }
-.show6RD span {
+#show6RD span {
     font-size: 1.2rem;
     color: black;
 }
-.show6R {
+#show6R {
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
 }
-.read2 {
+#read2 {
     font-size: 1rem;
     color: #8A8A8A;
     transition: 0.5s;
 }
-    .read2:hover {
+    #read2:hover {
         color: black;
     }
 
 /* -----------------sec9------------------------ */
 
-.show7 {
+#show7 {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.show7bg {
+#show7bg {
     width: 100%;
     height: auto;
 }
-.comma {
+#comma {
     position: absolute;
     top: 7%;
     left: 50%;
     width: 3%;
 }
-.show7 p {
+#show7 p {
     position: absolute;
     top: 20%;
     left: 37%;
@@ -711,13 +720,13 @@
     font-size: 1.3rem;
     text-align: center;
 }
-.show7 h5 {
+#show7 h5 {
     position: absolute;
     top: 46%;
     left: 46%;
     font-size: 1.6rem;
 }
-.show7 h6 {
+#show7 h6 {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -725,7 +734,7 @@
 }
 
 /* ---------------footer------------------ */
-.detail {
+#detail {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
     grid-template-rows: 20% auto auto;
@@ -734,14 +743,14 @@
     background-color: black;
     color: white;
 }
-.detail h3 {
+#detail h3 {
     grid-column: 1 / 5;
     display: flex;
     align-items: center;
     font-size: 2rem;
 }
 /* ------------------------------- */
-.about_us {
+#about_us {
     width: 90%;
     margin: 3% 3% 3% 0%;
 }
@@ -751,69 +760,69 @@
     font-weight: bold;
     margin: 5% 5% 5% 0%;
  }
-.about_us p {
+#about_us p {
     color: #8A8A8A;
     font-size: 1.1rem;
 }
 /* ------------------------------- */
- #detail2 {
+#detail2 {
     color: aliceblue;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5% 5% 5% 0%;
  }
- .download ul{
+#download ul{
     list-style: none;
 }
-.download ul li {
+#download ul li {
     margin: 4% 4% 4% 0%;
 }
-.download ul li a{
+#download ul li a{
     color: #8A8A8A;
     text-decoration: none;
     font-size: 1.1rem;
     transition: 0.5s;
 }
-    .download ul li a:hover {
+    #download ul li a:hover {
         font-size: 1.12rem;
         padding-left: 0.2rem;
         color: aliceblue;
     }
 /* ------------------------------- */
- #detail3 {
+#detail3 {
     color: aliceblue;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5% 5% 5% 0%;
  }
- .useful ul{
+#useful ul{
     list-style: none;
 }
-.useful ul li {
+#useful ul li {
     margin: 4% 4% 4% 0%;
 }
-.useful ul li a{
+#useful ul li a{
     color: #8A8A8A;
     text-decoration: none;
     font-size: 1.1rem;
     transition: 0.5s;
 }
-    .useful ul li a:hover {
+    #useful ul li a:hover {
         font-size: 1.12rem;
         padding-left: 0.2rem;
         color: aliceblue;
     }
  /* ------------------------------- */
- #detail4 {
+#detail4 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5% 5% 5% 0%;
  }
- .call {
+#call {
     font-size: 1.1rem;
  }
   /* ------------------------------- */
-  .sign {
+#sign {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -826,34 +835,34 @@
 
 @media only screen and (max-width: 1366px) {
     /* -------------sec7------------------------ */
-    .show5T p {
+    #show5T p {
         font-size: 2.3rem;
     }
-    .show5D_1 h4 {
+    #show5D_1 h4 {
         padding-left: 1rem;
     }
-    .show5D_2 h4 {
+    #show5D_2 h4 {
         padding-left: 1rem;
     }
-    .show5D_3 h4 {
+    #show5D_3 h4 {
         padding-left: 1rem;
     }
-    .show5D_4 h4 {
+    #show5D_4 h4 {
         padding-left: 1rem;
     }
 
     /* ----------------sec8--------------------- */
-    .show6 img:hover {
+    #show6 img:hover {
         width: 110%;
         height: auto;
         cursor: pointer;
     }
 
     /* ----------------sec9---------------------- */
-    .show7 h5 {
+    #show7 h5 {
         top: 55%;
     }
-    .show7 h6 {
+    #show7 h6 {
         top: 64%;
     }
 }
@@ -862,29 +871,29 @@
 
 @media only screen and (max-width: 1250px) {
     /* ---------------sec3------------------------- */
-    .pd1 p {
+    #pd1 p {
         top: 5rem;
         font-size: 1rem;
     }
-    .pd1 a {
+    #pd1 a {
         top: 12rem;
     }
     /* -------------sec7------------------------ */
-    .show5T p {
+    #show5T p {
         font-size: 1.9rem;
     }
     /* ----------------sec8--------------------- */
-    .show6 img:hover {
+    #show6 img:hover {
         width: 105%;
         height: auto;
         cursor: pointer;
     }
 
     /* ----------------sec9---------------------- */
-    .show7 h5 {
+    #show7 h5 {
         top: 55%;
     }
-    .show7 h6 {
+    #show7 h6 {
         top: 64%;
     }
 }
@@ -892,68 +901,68 @@
 /* --------------------900 px ----------------------- */
 
 @media only screen and (max-width: 980px) {
-    .nav {
+    #nav {
         grid-template-columns: 22% 58% 20%;
     }
-    .logo {
+    #logo {
         font-size: 2.3rem;
     }
-    .nav ul {
+    #nav ul {
         grid-template-columns: 20% 20% 24% 20%;
     }
-    .nav ul li a {
+    #nav ul li a {
         font-size: 1.2rem;
     }
-        .nav ul li a:hover {
+        #nav ul li a:hover {
             padding-left: 0.5rem;
             font-size: 1.3rem;
         }
 /* ----------------sec1------------------- */
-    .sec1 {
+    #sec1 {
         top: 7rem;
     }
-    .text1 {
+    #text1 {
         font-size: 2rem;
         padding-bottom: 0;
     }
-    .text1 p {
+    #text1 p {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
 
 /* ---------------sec4----------------- */
-    .show2L h2 {
+    #show2L h2 {
         font-size: 2.5rem;
     }
 /* --------------sec5------------------- */
-    .show3R h2 {
+    #show3R h2 {
         font-size: 2.5rem;
     }
 /* --------------sec6-------------------- */
-    .show4L h2 {
+    #show4L h2 {
         font-size: 2.5rem;
     }
 /* -----------------sec7------------------- */
-    .show5T p {
+    #show5T p {
         font-size: 1.5rem;
     }
-    .show5D img {
+    #show5D img {
         width: 90%;
     }
-    .show5D h4 {
+    #show5D h4 {
         font-size: 1.2rem;
     }
 /* ---------------sec9------------------ */
-    .show7 p {
+    #show7 p {
         font-size: 1.1rem;
         left: 37%;
     }
-    .show7 h5 {
+    #show7 h5 {
         font-size: 1.3rem;
         top: 64%;
         left: 45%;
     }
-    .show7 h6 {
+    #show7 h6 {
         font-size: 1rem;
         top: 73%;
         left: 49%;
@@ -965,190 +974,190 @@
 
 @media only screen and (max-width: 760px) {
 
-    .nav {
+    #nav {
         grid-template-columns: 22% 58% 20%;
     }
-    .logo {
+    #logo {
         font-size: 2rem;
     }
-    .nav ul {
+    #nav ul {
         grid-template-columns: 20% 20% 24% 20%;
     }
-    .nav ul li a {
+    #nav ul li a {
         font-size: 0.8rem;
     }
-        .nav ul li a:hover {
+        #nav ul li a:hover {
             padding-left: 0.5rem;
             font-size: 1rem;
         }
 
 /* ---------------sec1----------------- */
 
-    .sec1 {
+    #sec1 {
         top: 5rem;
     }
-    .text1 {
+    #text1 {
         font-size: 1.5rem;
         padding-bottom: 0;
     }
-    .text1 p {
+    #text1 p {
         font-size: 1rem;
         padding-top: 0;
     }
-    .main_btn a {
+    #main_btn a {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
         margin-top: 2rem;
     }
-        .main_btn a:hover {
+        #main_btn a:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .main_btn img {
+    #main_btn img {
         padding-left: 0.5rem;
     }
 
     /* -------------sec3------------------- */
 
-    .pd1 p {
+    #pd1 p {
         top: 5rem;
         font-size: 1rem;
     }
-    .pd1 a {
+    #pd1 a {
         top: 12rem;
     }
-    .btn_view2 a {
+    #btn_view2 a {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
         margin-top: 2rem;
     }
-        .btn_view2 a:hover {
+        #btn_view2 a:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .btn_view2 img {
+    #btn_view2 img {
         padding-left: 0.5rem;
     }
 
     /* ---------------sec4----------------- */
-    .show2L h2 {
+    #show2L h2 {
         font-size: 2rem;
     }
-    .btn_view3 {
+    #btn_view3 {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
     }
-        .btn_view3:hover {
+        #btn_view3:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .btn_view3 img {
+    #btn_view3 img {
         padding-left: 0.5rem;
     }
 
     /* ------------sec5------------------------- */
-    .show3R h2 {
+    #show3R h2 {
         font-size: 2rem;
     }
-    .btn_view4 {
+    #btn_view4 {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
     }
-        .btn_view4:hover {
+        #btn_view4:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .btn_view4 img {
+    #btn_view4 img {
         padding-left: 0.5rem;
     }
 
     /* -----------------sec6------------------ */
 
-    .show4L h2 {
+    #show4L h2 {
         font-size: 2rem;
     }
-    .btn_view5 {
+    #btn_view5 {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
     }
-        .btn_view5:hover {
+        #btn_view5:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .btn_view5 img {
+    #btn_view5 img {
         padding-left: 0.5rem;
     }
 
     /* --------------sec7-------------------- */
 
-    .show5T p {
+    #show5T p {
         font-size: 1.5rem;
     }
-    .btn_view6 {
+    #btn_view6 {
         width: 10rem;
         height: 4rem;
         font-size: 1rem;
         top: 30%;
         left: 68%;
     }
-        .btn_view6:hover {
+        #btn_view6:hover {
             margin-left: 0.5rem;
             padding-left: 0.5rem;
         }
-    .btn_view6 img {
+    #btn_view6 img {
         padding-left: 0.5rem;
     }
-    .show5D img {
+    #show5D img {
         width: 90%;
     }
-    .show5D h4 {
+    #show5D h4 {
         font-size: 1.2rem;
     }
-    .show5D_4 {
+    #show5D_4 {
         padding-top: 0.7rem;
     }
-    .show5D_4 p {
+    #show5D_4 p {
         padding-top: 0.3rem;
     }
 
     /* ---------------sec8------------------ */
 
-    .show6 img:hover {
+    #show6 img:hover {
         width: 105%;
     }
 
     /* ---------------sec9------------------ */
 
-    .show7 p {
+    #show7 p {
         font-size: 0.8rem;
         left: 37%;
     }
-    .show7 h5 {
+    #show7 h5 {
         font-size: 1rem;
         left: 45%;
     }
-    .show7 h6 {
+    #show7 h6 {
         font-size: 0.8rem;
         left: 49%;
     }
 
     /* ----------------footer--------------- */
 
-    .download ul li a{
+    #download ul li a{
         font-size: 1rem;
     }
-        .download ul li a:hover {
+        #download ul li a:hover {
             font-size: 1rem;
         }
-    .useful ul li a{
+    #useful ul li a{
         font-size: 1rem;
     }
-        .useful ul li a:hover {
+        #useful ul li a:hover {
             font-size: 1rem;
         }
 
